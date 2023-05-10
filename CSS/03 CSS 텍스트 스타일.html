@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 텍스트 스타일</title>
+    <!--내부스타일-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+        #ff1 {
+            font-family: "궁서체";
+        }
+        #ff2 {
+            font-family: "굴림체";
+        }
+        #ff3 {
+            font-family: "없는글꼴", "궁서^", "고딕";
+            /* ,(콤마)를 이용해 해당 글꼴이 없을 경우 대체 글꼴 지정 가능  */
+        }
+
+        /* 웹폰트 */
+        h1 {
+            font-family: 'Black Han Sans', sans-serif;
+        } 
+        #size1 {
+            font-size: 5px;
+        }
+        #size2 {
+            font-size: 5em;
+        }
+        #size3 {
+            font-size: 5%;
+        }
+
+        #w1 {
+            font-weight: bold;
+        }
+        #w2 {
+            font-weight: lighter;
+         }
+        #w3 {
+            font-weight: 900;
+        }
+        #pv {
+            /* small-caps : 소문자를 대문자로 바꿉니다
+            normar : 바꾸지않음 */
+            font-variant: small-caps;
+        }
+
+        #fs1 {
+            font-style: italic;
+        }
+
+        #fs2 {
+            font-style: oblique;
+        }
+
+        #c1 {
+            /* 이름으로 지정
+            웹 안전 색상
+            모든 웹브라우저에서 표현할 수 있는 새강
+            16가지 기본색상을 포함 216가지 */
+            color: red;
+        }
+        #c2 {
+            background-color: black;
+            color:  #ddd;
+            padding: 20px;
+            font-size: 2em;
+        }
+        #c3 {
+            color: rgb(0, 0, 255);
+        }
+        #c4 {
+            color: rgba(34, 139, 34, 0.5);
+            background-color: yellow;
+        }
+        #c5 {
+            color: hsla(323, 100%, 50%, 0.3);
+            background-color: bisque;
+        }
+
+        #deco1 {
+            text-decoration: none;
+        }
+        #deco2 {
+            text-decoration: overline;
+        }
+        #deco3 {
+            text-decoration: underline;
+        }
+        #deco4 {
+            text-decoration: line-through;
+        }
+
+        li {
+            padding: 20px;
+        }
+        a {
+            text-decoration: none; 
+            color: #666;
+            font-size: 1.5em;
+        }
+
+        #bg {
+            background-color: yellow;
+        }
+        #ts1 {
+            text-shadow: -10px -15px 3px #400094;
+            font-size: 1.5em;
+        }
+        #ts2 {
+            text-shadow: 1px 1px 7px #ff0000;
+            font-size: 1.5em;
+        }
+        #ts3 {
+            text-shadow: 5px 3px #4193ff;
+            font-size: 1.5em;
+        }
+
+        #form1 {
+            text-transform: none;
+        }
+        #form2 {
+            text-transform:uppercase;
+        }
+        #form3 {
+            text-transform:lowercase;
+        }
+        #form4 {
+            text-transform:capitalize;
+        }
+
+
+    </style>
+    <!--외부스타일-->
+    <link rel="stylesheet" href="03 CSS 텍스트 스타일.html">
+</head>
+<body>
+    <h1>CSS 텍스트 스타일</h1>
+
+    <h2>1. font-family</h2>
+    텍스트의 글꼴을 지정할 때 사용
+
+    <p id="ff1">글꼴 변경 테스트1</p>
+    <p id="ff2">글꼴 변경 테스트2</p>
+    <p id="ff3">글꼴 변경 테스트3</p>
+
+    <p>
+        웹 폰트 사용
+        <a href="https://fonts.google.com/">구글 웹 폰트</a>
+        <br>
+    </p>
+
+    <h2>2. font-size</h2>
+    텍스트의 크기를 변경할 때 사용
+
+    <ul>
+        <li id="size1">px</li>
+        <li id="size2">em</li>
+        <li id="size3">%</li>
+    </ul>
+
+    <h2>3. font-weight</h2>
+    텍스트의 두께를 변경할 때 사용
+
+    <ul>
+        <li>원래굵기</li>
+        <li id="w1">굵게</li>
+        <li id="w2">가늘게</li>
+        <li id="w3">900</li>
+    </ul>
+
+    <h2>4. font-variant</h2>
+    작은 대문자(소문자 크기의 대문자)로 변경할 때 사용
+    <p>I LOVE YOU</p>
+    <p id="pv">i love you</p>
+
+    <h2>5. font-style</h2>
+    텍스트의 기울임을 지정할 때 사용
+    <ul>
+        <li>기울임없음</li>
+        <li id="fs1">i기울임</li>
+        <li id="fs2">o기울임</li>
+    </ul>
+
+    <h2>6. color</h2>
+    텍스트의 색상을 지정할 때 사용
+
+    <ul>
+        <li id="c1">색상명으로 지정</li>
+        <li id="c2">16진수로 지정</li>
+        <li id="c3">RGB로 지정</li>
+        <li id="c4">rgba로 지정</li>
+        <li id="c5">hsl로 지정</li>
+    </ul>
+
+    <h2>7. text-decoration</h2>
+    텍스트에 줄을 그을 때 사용
+
+    <ul>
+        <li id="deco1">없음 none</li>
+        <li id="deco3">아랫줄 underline</li>
+        <li id="deco4">취소선 line_throught</li>
+        <li id="deco2">윗줄 overline</li>
+        <li><a href="https://www.naver.com/" target="_blank">링크</a></li>
+    </ul>
+
+    <h2>8. text_shadow</h2>
+    텍스트에 그림자 효과를 추가
+    <br> text_shadow: 가로거리 세로거리 번짐정도 색상
+    <br> 거리 양수 : 글자의 오른쪽, 아래쪽
+    <br> 거리 음수 : 글자의 왼쪽, 위쪽
+    <br> 번짐정도 : 양수값 그림자가 모든 방향으로 퍼져 나가므로 크게 표현(생략가능)
+
+    <div id="bg">
+        <span id="ts1">HTML5</span>
+        <span id="ts2">CSS</span>
+        <span id="ts3">JS</span>
+    </div>
+
+    <h2>9. text-transform</h2>
+    영문 텍스트의 대소문자 변환
+    
+    <ul>
+        <li id="form1">none</li>
+        c-><li id="form2">c</li>
+        C-><li id="form3">C</li>
+        cc-><li id="form4">cc</li>
+    </ul>
+
+</body>
+</html>
