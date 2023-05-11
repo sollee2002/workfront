@@ -133,6 +133,31 @@
             text-transform:capitalize;
         }
 
+        .lh1 {
+            font-size: 1em;
+            line-height: 1em;   
+            /* 가로정렬 */
+            text-align: left;
+        }
+
+        .lh2 {
+            font-size: 1em;
+            line-height: 2em;   
+            text-align: right;
+        }
+
+        .lh3 {
+            font-size: 1em;
+            line-height: 3em;   
+            text-align: center;
+        }
+
+        .lh4 {
+            font-size: 1em;
+            line-height: 0.5em;   
+            text-align: justify;
+        }
+
 
     </style>
     <!--외부스타일-->
@@ -229,6 +254,68 @@
         c-><li id="form2">c</li>
         C-><li id="form3">C</li>
         cc-><li id="form4">cc</li>
+    </ul>
+
+    <h2>10. line-height</h2>
+    문장 사이의 줄간격을 조정하고 싶을 때
+
+    <h1>텍스트 정렬 </h1>
+	문단태그를 이용하여 정렬 해봅시다
+
+    <p class="lh1"><!-- 왼쪽 정렬 -->
+	Integer elementum massa at nulla placerat varius.
+	Suspendisse in libero risus, in interdum massa.
+	Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+	Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
+
+	<p class="lh2"><!-- 오른쪽 정렬 -->
+	Integer elementum massa at nulla placerat varius.
+	Suspendisse in libero risus, in interdum massa.
+	Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+	Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
+	
+
+    <p class="lh3"><!-- 가운데 정렬 -->
+	Integer elementum massa at nulla placerat varius.
+	Suspendisse in libero risus, in interdum massa.
+	Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+	Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>	
+
+    <p class="lh4"><!-- 양쪽 정렬 -->
+	Integer elementum massa at nulla placerat varius.
+	Suspendisse in libero risus, in interdum massa.
+	Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+	Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
+
+    <h1>목록 스타일</h1>
+    <h2>순서 없는 목록 스타일</h2>
+
+    <ul style="list-style-type: disc;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>JQuery</li>
+    </ul>
+
+    <ul style="list-style-type: square; list-style-position: inside;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>JQuery</li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>JQuery</li>
+    </ul>
+
+    <ul style="list-style-image: url(images/dot.png);">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>JQuery</li>
     </ul>
 
 </body>
