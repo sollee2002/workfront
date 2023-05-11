@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        p {
+            width: 500px;
+            height: 100px;
+            background-color: #eee;
+            border: 1px solid black;
+        }
+        #static {
+            /* 기본값 */
+            position: static;
+        }
+
+        #relative1 {
+            position: relative;
+        }
+
+        #relative2 {
+            position: relative;
+            /* 왼쪽에서 100px 떨어지게 */
+            left: 100px;
+            /* 위에서 -50px 떨어지게(음수 위로 이동) */
+            top: -50px;
+        }
+
+        #outer {
+            position: relative;
+        }
+
+        #first {
+            width: 300px;
+            height: 300px;
+            background-color: burlywood;
+        }
+
+        #second {
+            width: 200px;
+            height: 200px;
+            background-color:lightgreen;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        #third {
+            width: 100px;
+            height: 100px;
+            background-color:lightsalmon;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id="static">포지셔닝</h2>
+    CSS를 이용해서 여러 요소를 적절하게 배치하는 것
+
+    <div id="outer">
+        <p id="first"></p>
+        <p id="second"></p>
+        <p id="third"></p>
+    </div>
+
+    <p>Aliqua eiusmod dolore irure ad magna velit. 
+        Elit est deserunt qui ut nostrud ullamco ipsum nostrud Lorem reprehenderit dolor. 
+        Amet consectetur eiusmod irure Lorem eu.</p>
+
+    <p id="relative1">Aliqua eiusmod dolore irure ad magna velit. 
+        Elit est deserunt qui ut nostrud ullamco ipsum nostrud Lorem reprehenderit dolor. 
+        Amet consectetur eiusmod irure Lorem eu.</p>
+
+    <p id="relative2">Aliqua eiusmod dolore irure ad magna velit. 
+        Elit est deserunt qui ut nostrud ullamco ipsum nostrud Lorem reprehenderit dolor. 
+        Amet consectetur eiusmod irure Lorem eu.</p>
+
+</body>
+</html>
