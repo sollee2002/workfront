@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            /* 가로정렬 */
+            /* display: inline-block; */
+            float: left;
+
+            width: 100px;
+            height: 30px;
+            border-left: 1px solid red;
+        }
+
+        a {
+            /* 블럭처럼 크기를 지정하기 위해 inline-block으로 변경 */
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            border: 1px solid blue;
+            /* 가로정렬 */
+            text-align: center;
+            /* 세로정렬 */
+            line-height: 30px;
+
+            text-decoration: none;
+            font-weight: 700;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+</body>
+</html>

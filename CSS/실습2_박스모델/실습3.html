@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 레이아웃</title>
+    <style>
+
+      body {
+        width: 1300px;
+        margin: 10px auto;
+
+      }
+      /* 공백 : 자식요소/자손요소 선택 */
+      nav ul {
+        /* display :inline; */
+        list-style: none;
+        margin: 0px;
+        padding-left: 5px;
+      }
+
+      li {
+        border-left: 3px solid red;
+        height: 25px;
+        padding-left: 3px;
+        padding-right: 7px;
+        text-align: left;
+        float: left;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        padding: 5px;
+      }
+      /* 요소에 마우스가 올라왔을 때 */
+      li:hover {
+        background-color: red;
+      }
+
+      a:hover {
+        color: white;
+      }
+
+      h2 {
+        padding-top: 20px;
+        /* float 해체 */
+        clear: both;
+        border-style: none;
+      }
+
+      #com {
+        margin-left: 5px;
+      }
+
+      #content {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      
+      #house {
+        padding: 10px;
+        border-top: 1px dashed #bbb;
+        border-bottom: 1px dashed #bbb;
+        margin-bottom: 10px;
+      }
+      
+      #bob {
+        padding: 10px;
+        border-top: 1px dashed #bbb;
+        border-bottom: 1px dashed #bbb;
+        margin-bottom: 10px;
+      }
+
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">애완견 종류</a></li>
+      <li><a href="#">입양하기</a></li>
+      <li><a href="#">건강돌보기</a></li>
+      <li><a href="#">더불어살기</a></li>
+    </ul>
+  </nav>
+<section id="content">
+  <h2>강아지 용품 준비하기</h2>
+  <article id="house">  
+    <h3>강아지 집 </h3>
+     <p>강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는 박음질이 잘 되어 있는지, 세탁이 간편한 제품인지 꼭 확인하시고 고르시는 것이 좋습니다.</p>
+  </article>
+  <article id="bob"> 
+    <h3>강아지 먹이 </h3>
+    <p>강아지의 먹이는 꼭 어린 강아지용으로 나와있는 사료를 선택하세요. 강아지들은 사람에 비해 성장속도가 8배정도 빠르답니다. 따라서 강아지에게는 성장속도에 맞는 사료를 급여하셔야 합니다. 사람이 먹는 음식을 먹게 되면 양념과 향신료에 입맛이 익숙해지고, 비만이 될 가능성이 매우 높아집니다. 강아지용 사료는 생후 12개월까지 급여하셔야 합니다.</p>
+   </article>  
+ </section>
+<footer>
+  <p id="com">Copyright 2012 funnycom</p>
+</footer>
+</body>
+</html>

@@ -6,53 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>꿀사과</title>
     <style>
-        body {
-            border: 1px solid #999;
-            width: 640px;
-            /* 상하, 좌우 */
-            margin: 0px auto;
-            font-weight: 900;
+        .imgBg {
+            background-image: url("../images/apple-bg.jpg");
+            width: 600px;
+            height: 500px;
+            background-size: cover; /* 이미지 크기를 내가 지정한 크기에 맞춤*/
+            /* border: 1px solid red; */
+
+            position: relative;
         }
 
-        #check {
-            background-color: black;
-            padding: 10px;
-            color: #ddd;
+        .imgContant {
+            width: 100%;
+            height: 200px;
+            /* border: 1px solid blue; */
+            background-color: rgba(0, 0, 0, 0.5);
+
+            position: absolute;
+            bottom: 0px;
         }
 
-        #box {
-            text-align: center;
-            line-height: 2em;
+        h1 {
+            /* border: 1px solid yellow; */
+            /* 브라우저의 기본속성(마진값) 제거 */
+            margin: 0px;
+            font-size: 2.5em;
+            height: 80px;
+            line-height: 80px;
+            padding-left: 60px;
+            color: white;
         }
 
-        #red {
-            font-size: 1.5em;
-            color: red;
-            line-height: 2.7em;
-        }
+        p {
+            /* border: 1px solid pink; */
+            margin: 0px;
+            height: 100px;
 
-        #blue {
-            color: blue;
-        }
 
+            padding-left: 43px;
+            padding-top: 20px;
+            line-height: 40px;
+            font-weight: 700;
+            font-family: "고딕";
+            font-size: 20px;
+            color: orange;
+        }
     </style>
 </head>
 <body>
-    <img src="..\images\top.jpg">
-    <div id="check">확인하세요</div>
-
-    <div id="box">
-    <span id="red">주문 및 배송</span><br>
-    <span id="blue">오후 2시 이전</span> 주문건은 당일 발송합니다<br>
-    2시 이후 주문건은 다음날 발송합니다(주말 제외)
-    <hr>
-    <span id="red">교환 및 환불</span><br>
-    불만족시 <span id="blue">100% 환불해</span> 드립니다<br>
-    고객센터로 전화주세요
-    <hr>
-    <span id="red">고객센터</span><br>
-    0000-0000<br>
-    <small>상담시간 : 오전 9시 ~ 오후 6시 (토/일, 공휴일 휴무)</small>
+    <div class="imgBg">
+        <div class="imgContant">
+            <h1>가정용 꿀사과</h1>
+            <p>흠집이 있고 약간은 못생겼지만 맛과 영양은 그대로입니다.<br>
+            질좋은 사과를 저렴하게 즐겨보세요</p>
+        </div>
     </div>
 </body>
 </html>
