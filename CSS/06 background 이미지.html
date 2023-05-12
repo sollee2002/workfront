@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지</title>
+    <style>
+        body {
+            height: 100vw;
+        }
+        #container {
+            width: 500px;
+            /* height: 500px; */
+            
+            /* 배경화면 반복 */
+            background-image: url("images/bg1.jpg");
+            background-repeat: repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+
+            /* 배경화면 적용범위 지정 */
+            border: 10px dotted #ccc;
+            /* border영역까지 포함하여 배경화면 출력 */
+            background-clip: border-box;
+            /* padding영역까지 포함하여 배경화면 출력 */
+            background-clip: padding-box;
+            /* content영역까지 포함하여 배경화면 출력 */
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div container>
+        텍스트
+    </div>
+</body>
+</html>
