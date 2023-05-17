@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            width: 1000px;
+            height: 800px;
+
+            /* background-color: bisque; */
+            margin: 0px auto;
+        }
+
+        header{
+            width: 100%;
+            height: 120px;
+            /* background-color: thistle; */
+        }
+        main{
+            width: 100%;
+            height: 600px;
+            background-color: lightcyan;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: palegreen;
+        }
+        .logo{
+            width: 100%;
+            height: 90px;
+            /* background-color: lightpink; */
+        }
+        nav{
+            width: 100%;
+            height: 30px;
+            background-color: #64AD16;
+        }
+
+        .leftSide{
+            width: 150px;
+            height: 600px;
+            background-color: lightblue;
+            float: left;
+            padding-top: 10px;
+        }
+        main>section{
+            width: 550px;
+            height: 600px;
+            background-color: lightsteelblue;
+            float: left;
+        }
+        .rightSide{
+            width: 300px;
+            height: 600px;
+            background-color: lightskyblue;
+            float: left;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 9.9%;
+            line-height: 30px;
+        }
+        #logo{
+            padding: 5px;
+        }
+        #title{
+            padding-left: 100px;
+            padding-bottom: 8px;
+        }
+        #left{
+            width: 150px;
+        }
+        #id{
+            float: left;
+            margin-right: 5px;
+        }
+        #password{
+            float: left;
+            margin-right: 5px;
+        }
+        #login{
+            height: 36px;
+            margin-top: 3px;
+        }
+        /* input[type=submit]{
+            border: 1px solid #64AD16;
+            color: #64AD16;
+        } */
+        .rightSide img{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class='wrap'>
+        <header>
+            <div class='logo'><img id='logo' src='images/logo.jpg'> <img id='title' src='images/mainlogo.jpg'></div>
+            <nav>
+                <a href='#'>Home</a>
+                <a href='#'>Profile</a>
+                <a href='#'>Board</a>
+                <a href='#'>Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <aside class='leftSide'><img id='left' src='images/left_img.jpg'></aside>
+            <section>메인영역</section>
+            <aside class='rightSide'>
+                <input type='text' id='id' name='id' placeholder='ID를 입력하세요'>
+                <input type='password' id='password' name='password' placeholder='PW를 입력하세요'>
+                <!-- <input type='submit' id='login' value='로그인'> -->
+                <img src='images/pngwing.com.png'>
+            </aside>
+        </main>
+
+        <footer>
+            푸터영역
+        </footer>
+    </div>
+</body>
+</html>
