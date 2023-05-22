@@ -5,7 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- 폰트어썸아이콘 사용하기 -->
+    <script src="https://kit.fontawesome.com/ba3018067.js" crossorigin="anonymous"></script>
     <style>
+        *{
+            margin: 0px;
+        }
+        i{
+            font-size: 2.2em;
+        }
+        p{
+            font-size: 2em;
+        }
+        .logo{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            /* 중심축 정렬 */
+            justify-content: space-between;
+            /* 교차축 정렬 */
+            align-items: center;
+            height: 50px;
+            
+            /* box-shadow: 2px 2px 3px 3px #333; */
+        }
         *{
             margin: 0px;
             padding: 0px;
@@ -39,7 +63,7 @@
             position: relative;
 
             /* 가로메뉴/세로메뉴 */
-            float: left;
+            /* float: left; */
             
             
         }
@@ -112,11 +136,27 @@
             color: white;
             transition: 1s;
         }
+
+        header:hover nav{
+            left:0px;
+        }
+        nav{
+            position: relative;
+            left: -200px;
+            transition: 2s;
+        }
     </style>
 </head>
 <body>
 
     <header>
+        <div class='logo'>
+            <!-- 햄버거메뉴 -->
+            <i class="fas fa-regular fa-bars"></i>
+            <p>오늘의집</p>
+            <!-- 알림(종) -->
+            <i class="fas fa-thin fa-bell"></i>
+        </div>
         <!-- 네비게이션영역 -->
         <nav>
             <!-- ul>(li>a{메뉴$})*5 -->
@@ -129,9 +169,7 @@
                         <li><a href="#">서브메뉴2-1</a></li>
                         <li><a href="#">서브메뉴2-2</a></li>
                         <li><a href="#">서브메뉴2-3</a></li>
-                        <li><a href="#">서브메뉴2-1</a></li>
-                        <li><a href="#">서브메뉴2-2</a></li>
-                        <li><a href="#">서브메뉴2-3</a></li>
+                        
                     </ul>
                 </li>
                 <li>
@@ -149,5 +187,7 @@
 
         </nav>
     </header>
+
+    
 </body>
 </html>
