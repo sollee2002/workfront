@@ -202,7 +202,7 @@
             area1.style.color='white';
             
             // 선택된 요소의 값을 변경 
-            area1.innerHTML += '생상변경 완료';
+            area1.innerHTML += '색상변경 완료';
 
         }
 
@@ -281,11 +281,11 @@
     </script>
 
     <h4>4) text 박스의 value값 읽어오기</h4>
-    <form>
+    <div>
         <label>이름 : <input type="text" name="userName" id="userName"></label>
         <!-- 폼태그에 버튼이 하나인 경우 submit버튼이 됨. -->
-        <button onclick='readValue();'>input 값 확인</button>
-    </form>
+        <button onclick='readValue()'>input 값 확인</button>
+    </div>
 
     <div id="area3" class="area"></div>
 
@@ -295,8 +295,10 @@
             // -> 값이 있으면 area3에 출력
             // -> 없으면 메세지(alert('이름을 입력하세요')) 출력
             var input = document.querySelector('#userName');
-            var area = document.querySelector('#area3');
+            var area3 = document.querySelector('#area3');
             var value = input.value;
+
+            console.log(value);
             /* 값을 변수에 저장
             var getInnerHTML = input.innerHTML;
             // 대입연산자를 붙여주면 값을 변경
@@ -308,7 +310,7 @@
                 area.innerHTML='';
                 input.focus();
             } else {
-                area.innerHTML=value;
+                area3.innerHTML=value;
             }
         }
 
