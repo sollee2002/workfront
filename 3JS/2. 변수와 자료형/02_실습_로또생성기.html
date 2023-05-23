@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또생성기</title>
+    <style>
+        .ball {
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+    <script src="02_실습_로또생성기.js"></script>
+</head>
+<body>
+    <h1>로또생성기</h1>
+    <button id='btn1' onclick="lotto()">로또생성하기</button>
+    <div class='lottoDiv'>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
