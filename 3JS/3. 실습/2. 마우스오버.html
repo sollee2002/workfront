@@ -5,6 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>연습문제 1</title>  
+  <script>
+    // window.onliad = function() {
+    //   let img = document.querySelector('#container');
+
+    //   //마우스가 요소 위에 올라왔을 때
+    //   img.addEventListener('mouseover', function() {
+    //     //이미지 태그의 src 속성을 변경
+    //     //요소.속성명
+    //     img.src='images/pic-6.jpg';
+    //   })
+
+    //   img.addEventListener('mouseout', function() {
+    //     img.src="images/pic-1.jpg";
+    //   })
+    // }
+  </script>
   <style>
     #container {
       width: 600px;
@@ -20,7 +36,9 @@
 <body>
   <div id="container">
     <h1>마우스 오버하면 이미지 바꾸기</h1>
-    <img src="images/pic-1.jpg" alt="">
+    <img src="images/pic-1.jpg" onmouseover="this.src='images/pic-6.jpg'" onmouseout="this.src='images/pic-1.jpg'">
+
+
   </div>
 </body>
 </html>

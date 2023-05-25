@@ -7,10 +7,12 @@
   <title>My Profile</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/modal.css">
+  <script src="js/6. 모달창.js"></script>
 </head>
-<body>
+<body> 
   <button id="open">프로필 보기</button>
 
+  <!-- 모달창 시작-->
   <div id="modal-box">
     <div id="modal-contents">
       <button id="close">&times;</button>
@@ -24,8 +26,21 @@
         </div>
       </div>
     </div>
+    <!-- 모달창 끝-->
   </div>
 
-  <script src="js/modal.js"></script>
+  
+  
+  <!-- <button onclick='popup();'>팝업창띄우기</button>
+  <script>
+    function popup(){
+      // 파일경로
+      let url = '6. 모달창.html';
+      let name = 'popup test';
+      let option = 'width=500, height=500, top=100, left=200';
+      // 페이지경로, 팝업창이름, 옵션
+      window.open(url, name, option);
+    } -->
+  </script>
 </body>
 </html>

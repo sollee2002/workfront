@@ -1,5 +1,5 @@
     window.onload = function() {
-        view.addeventListener('click', function() {
+        view.addEventListener('click', function() {
       detail.classList.toggle('hidden');
     })
 }
