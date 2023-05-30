@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON</title>
+  <link rel="stylesheet" href="css/student.css">
+</head>
+<body>
+  <div id="container">
+    <h1>수강생 명단</h1>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.open('get', 'json/student-2.json');
+
+    xhr.send();
+ 
+    xhr.onreadystatechange = function() {
+
+      let resDiv = document.querySelector('#result');
+
+      if(xhr.readyState === 4 && xhr.status == 200) {
+        //응답 문자열
+        console.log(xhr.responseText);
+        console.log(xhr.status);
+
+        //jsObj로 변환
+        let student = JSON.parse(xhr.responseText);
+
+        // console.log(xhrObj);
+        
+        //화면출력
+        for(num in student) {
+          
+          resDiv.innerHTML += `<h1>${student[num].name}</h1>
+                              <ul>
+                                <li>전공 : ${student[num].major}</li>
+                                <li>학년 : ${student[num].grade}</li>
+                              </ul>`
+        }
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
