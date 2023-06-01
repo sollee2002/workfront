@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 10px;
+        }
+
+        td {
+            border: 3px ridge #d6d6d6;
+        }
+
+        #btn {
+            text-align: center;
+        }
+
+        .login {
+            display:none;
+        }
+
+    </style>
+
+    <script>
+        window.onload = function() {
+
+            btn1.addEventListener('click',function() {
+
+            idCheck.addEventListener('click',function() { //ID유효성
+                if(userId.value.length == 0){
+                alert("아이디가 누락됐습니다.");
+                return false;
+                }
+                })
+
+                if(phone.value == ""){ //셀렉트박스 유효성
+                alert("번호를 선택해야 합니다.");
+                return false;
+                }
+    
+                //취미 유효성
+                flag = false;
+                for(i=0; i < hobby.length; i++){
+                    if(hobby[i].checked){
+                        flag = true;
+                    }
+                }
+                
+                if(flag == false){
+                    alert("취미를 2개 이상 선택해주세요");
+                    return false;
+                }
+    
+                //성별유효성
+                flag = false;
+                for(i=0; i < gender.length; i++){
+                    if(gender[i].checked){
+                        flag = true;
+                        break;
+                    }
+                }
+                
+                if(flag == false){
+                    alert("성별을 체크하세요");
+                    return false;
+                }
+
+            })
+
+            
+            
+        }
+        function DisplayOn() {
+
+            let login = document.querySelector('.login')
+
+            if(login.style.Display=='none') {
+                login.style.Display='block'
+            } else {
+                login.style.Display=='none'
+            }
+        }
+        </script>
+</head>
+<body>
+
+    <button onclick="DisplayOn();">회원가입하기</button>
+
+    <div class="login">
+    <table>
+            <h2 style="text-align: center;">회원가입폼</h2>
+            <tr>
+                <td>ID</td>
+                <td><input type="text" name="userId" id="userId">
+                <button id="idCheck">ID중복검사</button></td>
+            </tr>            
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="userPw" id="userPw"></td>
+            </tr>
+            <tr>
+                <td>성명</td>
+                <td><input type="text" name="userName" id="userName"></td>
+            </tr>
+            <tr>
+                <td>E-Mail</td>
+                <td><input type="text" name="userEmail" id="userEmail" required size="15px">
+                    @ <input type="email" name="email" id="email" required size="15px"> <select>
+                    <option value="none">직접입력</option>
+                    <option value="google">@gmail.com</option>
+                    <option value="naver">@naver.com</option>
+                    <option value="daum">@daum.net</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>핸드폰</td>
+                <td><select id="phone">
+                    <option value="none">번호선택</option>
+                    <option value="num1">010</option>
+                    <option value="num2">011</option>
+                </select>
+                -<input type="tel" name="tel1" id="tel1" required size="10px">
+                -<input type="tel" name="tel2" id="tel2" required size="10px"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td><input type="radio" name="gender" id="gender">남자
+                    <input type="radio" name="gender" id="gender">여자</td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td><input type="checkbox" name="hobby" id="hobby1">공부
+                    <input type="checkbox" name="hobby" id="hobby2">등산
+                    <input type="checkbox" name="hobby" id="hobby3">게임
+                    <input type="checkbox" name="hobby" id="hobby4">낚시
+                    <input type="checkbox" name="hobby" id="hobby5">쇼핑</td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td> <textarea id="" style="resize: none;" cols="60" rows="6"
+                    placeholder="자기소개를 100자 이내로 입력하세요"></textarea></td>
+            </tr>
+            <tr>
+                <td id='btn' colspan="2"><input id="btn1" type="submit" value="회원가입">
+                <input type="reset" value="취소"></td>
+
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+    
+</body>
+</html>

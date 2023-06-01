@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2번</title>
+    <script>
+            
+            let result = document.querySelector('result');
+            
+            let jsonStr = `[
+                {
+                    "name" : "고경희",
+                    "major" : "컴퓨터공학",
+                    "grade" : 2,
+                    "phone" : 010-1111-2222
+                },
+                
+                {
+                    "name" : "홍길동",
+                    "major" : "컴퓨터공학",
+                    "grade" : 2,
+                    "phone" : 010-2222-3333
+                }
+            ]`;
+        
+        function testJson() {
+         console.log(jsonStr);
+        }
+    
+    
+</script>
+</head>
+<body>
+
+    <div id="container">
+        <button onclick="testJson()">학생정보</button>
+  
+      <div id="result"></div>
+    </div>
+  
+</body>
+</html>
